@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_10dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/opacity"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_normal_size" />
+
+    <!--<android.support.v7.widget.AppCompatSeekBar-->
+        <!--android:id="@+id/sb_opacity_sticker"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="8"-->
+        <!--android:progressDrawable="@drawable/red_scrubber_progress"-->
+        <!--android:thumb="@drawable/red_scrubber_control"-->
+        <!--android:visibility="gone"/>-->
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/sb_opacity_sticker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        app:dsb_progressColor="@color/white"
+        app:dsb_indicatorColor="@color/white"
+        app:dsb_rippleColor="@color/colorAccent"/>
+</LinearLayout>

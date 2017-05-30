@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_blur"
+    android:clipChildren="true"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.MainEditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+
+        <FrameLayout
+            android:id="@+id/adParent"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/nonAdParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_blur">
+
+            <FrameLayout
+                android:id="@+id/collage_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_blur"
+                android:layout_marginBottom="@dimen/collageview_margin" />
+
+            <FrameLayout
+                android:id="@+id/menu_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/colorSecondary" />
+        </FrameLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

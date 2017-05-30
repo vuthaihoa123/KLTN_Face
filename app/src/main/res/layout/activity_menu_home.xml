@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/btn_nav_bar"
+        android:layout_width="@dimen/icon_size_standard"
+        android:layout_height="@dimen/icon_size_standard"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginTop="@dimen/small_x"
+        android:layout_marginLeft="@dimen/small_x">
+
+        <ImageView
+            android:layout_width="@dimen/icon_size_small"
+            android:layout_height="@dimen/icon_size_small"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_navi" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/btn_gift_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginTop="@dimen/small_x"
+        android:layout_marginRight="@dimen/small_x">
+
+        <ImageView
+            android:layout_width="@dimen/icon_size_small"
+            android:layout_height="@dimen/icon_size_small"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_star" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/btn_templates"
+        android:layout_width="@dimen/width_button_menu"
+        android:layout_height="@dimen/height_button_menu"
+        android:layout_centerInParent="true"
+        android:background="?attr/selectableItemBackgroundBorderless">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_templates" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/btn_my_studio"
+        android:layout_width="@dimen/width_button_menu"
+        android:layout_height="@dimen/height_button_menu"
+        android:layout_below="@+id/btn_templates"
+        android:layout_centerHorizontal="true"
+        android:background="?attr/selectableItemBackgroundBorderless">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_studio" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/btn_rate_app"
+        android:layout_width="@dimen/width_button_menu"
+        android:layout_height="@dimen/height_button_menu"
+        android:layout_below="@+id/btn_my_studio"
+        android:layout_centerHorizontal="true"
+        android:background="?attr/selectableItemBackgroundBorderless">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_rate" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/btn_more_apps"
+        android:layout_width="@dimen/width_button_menu"
+        android:layout_height="@dimen/height_button_menu"
+        android:layout_below="@+id/btn_rate_app"
+        android:layout_centerHorizontal="true"
+        android:background="?attr/selectableItemBackgroundBorderless">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/btn_rate_app"
+            android:layout_alignStart="@+id/btn_rate_app"
+            android:layout_below="@+id/btn_rate_app"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_more" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</RelativeLayout>

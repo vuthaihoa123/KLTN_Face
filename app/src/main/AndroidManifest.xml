@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uet.kltn.hoavt_58.crazyexface">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <application
+        android:name=".helpers.SampleApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        <activity
+            android:name=".activities.DetectionActivity"
+            android:label="@string/detection"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SelectImageActivity"
+            android:label="@string/select_an_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        <activity
+            android:name=".activities.FrameTemplateActivity"
+            android:label="@string/pickFrame"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        <activity
+            android:name=".activities.ExFaceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".activities.GalleryActivity"
+            android:theme="@style/AppTheme1"/>
+        <activity
+            android:name=".activities.GroupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        <activity
+            android:name=".activities.CollageFacesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        <activity
+
+            android:name=".photo_collage.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+
+            android:name=".photo_collage.MenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+
+            android:name=".photo_collage.MainEditorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+        <activity
+            android:name=".photo_collage.GalleryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".photo_collage.SavePhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".photo_collage.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent"/>
+
+
+        <meta-data
+            android:name="uet.kltn.hoavt_58.crazyexface.photo_collage.MyGlideModule"
+            android:value="GlideModule" />
+
+
+        <activity
+            android:name=".photo_collage.FunctionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".photo_collage.MyStudioActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".photo_collage.DisplayPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>

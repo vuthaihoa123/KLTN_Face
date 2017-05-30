@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals
+        name="numOfDeletedPhotos">
+        <item quantity="one">1 photo deleted</item>
+        <item quantity="other">%d photos deleted</item>
+    </plurals>
+</resources>

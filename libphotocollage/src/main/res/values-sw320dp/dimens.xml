@@ -1,0 +1,6 @@
+<resources>
+    <!-- Default screen margins for smallest width = 320dp 18 -->
+
+    <dimen name="collage_select_line_width">7dp</dimen>
+    <dimen name="default_sticker_text_size">15dp</dimen>
+</resources>

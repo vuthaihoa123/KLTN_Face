@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><!--for tablet 10-inches-->
+<resources>
+
+    <dimen name="collage_select_line_width">26.5dp</dimen>
+    <dimen name="default_sticker_text_size">65dp</dimen>
+</resources>

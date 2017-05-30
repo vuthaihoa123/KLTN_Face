@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_14dp">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="@dimen/icon_size_xstand"
+        android:layout_height="@dimen/icon_size_xstand">
+
+        <uet.kltn.hoavt_58.crazyexface.photo_collage.ui.CircleImageView
+            android:id="@+id/iv_icon1"
+            android:layout_width="@dimen/icon_size_xstand"
+            android:layout_height="@dimen/icon_size_xstand" />
+
+        <uet.kltn.hoavt_58.crazyexface.photo_collage.ui.CircleImageView
+            android:id="@+id/iv_icon2"
+            android:layout_width="@dimen/icon_size_xstand"
+            android:layout_height="@dimen/icon_size_xstand"
+            android:src="@drawable/ic_done" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/padding_14dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_normal_size" />
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_small_size" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_size"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_small_size" />
+    </RelativeLayout>
+</android.support.v7.widget.LinearLayoutCompat>

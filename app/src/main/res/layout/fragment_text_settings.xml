@@ -1,0 +1,45 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        style="@style/ViewGroup"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            style="@style/ViewGroup"
+            android:layout_marginTop="@dimen/xx_small" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view_pattern"
+            style="@style/ViewGroup"
+            android:layout_marginTop="@dimen/small_x" />
+
+        <include
+            android:id="@+id/sb_size_text"
+            layout="@layout/layout_seekbar" />
+
+        <include
+            android:id="@+id/sb_padding_text"
+            layout="@layout/layout_seekbar" />
+
+        <LinearLayout
+            style="@style/ViewGroup"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/tab_padding">
+
+            <include
+                android:id="@+id/vg_scale"
+                style="@style/HorizontalWeightAlign"
+                layout="@layout/layout_vertical_viewgroup" />
+
+            <include
+                android:id="@+id/vg_rotate"
+                style="@style/HorizontalWeightAlign"
+                layout="@layout/layout_vertical_viewgroup" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

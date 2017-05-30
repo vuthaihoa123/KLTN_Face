@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F48FB1</color>
+    <color name="colorPrimaryDark">#FA2E79</color>
+    <color name="colorAccent">#ffff00</color>
+    <color name="colorSecondary">#EDEDED</color>
+    <color name="colorButton">#E91E63</color>
+    <color name="button_pressed_background">#FF4081</color>
+    <color name="button_enabled_background">#E91E63</color>
+    <color name="button_disabled_background">#C0C0C0</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="transparent_dark">#a94e4e4e</color>
+
+    <color name="yellow">#88ffeb3b</color>
+    <color name="black">#000000</color>
+    <color name="dim_color">#26000000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="grey">#424242</color>
+    <color name="white_75">#40FFFFFF</color>
+    <color name="black_75">#40000000</color>
+    <color name="deep_blue">#3c7aa1</color>
+    <color name="light_gray_half_transparent">#e0e0e0</color>
+
+    <color name="background_window">#fafafa</color>
+    <color name="greenDark">#3E5F22</color>
+
+    <color name="deep_purple">#673ab7</color>
+    <color name="fallback_yellow">#fff59d</color>
+
+    <!-- Material colors -->
+    <color name="mantis">#8BC24A</color>
+    <color name="safety_orange">#FF9700</color>
+    <color name="gorse">#FFEB3C</color>
+    <color name="fire_engine_red">#D01715</color>
+    <color name="iris_blue">#00BCD5</color>
+    <color name="pink">#e91e63</color>
+    <color name="indigo">#3f51b5</color>
+    <color name="menu_collage_white_85">@color/white_75</color>
+    <color name="seperator_bg">#888</color>
+    <color name="yellowDarkerColor">#A7A115</color>
+    <color name="blueLighterColor">#0076A2</color>
+    <color name="blueSlideColor">#00C1F4</color>
+    <color name="redLighterColor">#CD996B</color>
+    <color name="pinkLighterColor">#D6D6D6</color>
+    <color name="greyLighterColor">#CAB097</color>
+    <color name="white_blur">#EDEDED</color>
+    <!--~ Material colors -->
+
+    <!-- background color -->
+    <array name="color_picker">
+        <item>#ffffff</item>
+        <item>#0284fe</item>
+        <item>#44bfc7</item>
+        <item>#ffbf08</item>
+        <item>#f93d4c</item>
+        <item>#d696bb</item>
+        <item>#669acc</item>
+        <item>#12cf13</item>
+        <item>#ff7e2a</item>
+        <item>#e58586</item>
+        <item>#7747fd</item>
+        <item>#20cef3</item>
+        <item>#67b869</item>
+        <item>#d5a889</item>
+        <item>#fe5da3</item>
+        <item>#a795c9</item>
+        <item>#ff0000</item>
+        <item>#ff8000</item>
+        <item>#ffff00</item>
+        <item>#00ff00</item>
+        <item>#00ffff</item>
+        <item>#307030</item>
+        <item>#00ff80</item>
+        <item>#c42323</item>
+
+        <item>#0080ff</item>
+        <item>#0000ff</item>
+        <item>#8000ff</item>
+        <item>#ff0080</item>
+
+        <item>#0f0f5b</item>
+        <item>#000000</item>
+    </array>
+    <!-- background color -->
+</resources>

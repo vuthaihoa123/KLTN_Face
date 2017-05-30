@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_10dp">
+
+    <include
+        android:id="@+id/bt_layout"
+        style="@style/HorizontalWeightAlign"
+        layout="@layout/layout_image_button" />
+
+    <include
+        android:id="@+id/bt_text_sticker"
+        style="@style/HorizontalWeightAlign"
+        layout="@layout/layout_image_button" />
+
+    <include
+        android:id="@+id/bt_icon_sticker"
+        style="@style/HorizontalWeightAlign"
+        layout="@layout/layout_image_button" />
+
+    <include
+        android:id="@+id/bt_other_options"
+        style="@style/HorizontalWeightAlign"
+        layout="@layout/layout_image_button" />
+</LinearLayout>

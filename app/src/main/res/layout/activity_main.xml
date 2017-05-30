@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="uet.kltn.hoavt_58.crazyexface.MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        card_view:cardElevation="5dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_cover" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_services"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:padding="@dimen/activity_vertical_margin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_settings"
+            android:layout_width="@dimen/button_small_size"
+            android:layout_height="@dimen/button_small_size"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_settings"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_app_name_animate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/animated_wifi"
+            android:fontFamily="monospace"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:text="@string/app_name"
+            android:textColor="@color/colorButton"
+            android:textSize="@dimen/text_small_size" />
+
+        <TextView
+            android:id="@+id/tv_app_name_no_animate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/ic_wifi_4"
+            android:fontFamily="monospace"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:text="@string/app_name"
+            android:textColor="@color/colorButton"
+            android:textSize="@dimen/text_small_size" />
+
+        <ImageView
+            android:id="@+id/iv_gift"
+            android:layout_width="@dimen/button_small_size"
+            android:layout_height="@dimen/button_small_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_gift"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>
